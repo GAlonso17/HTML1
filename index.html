@@ -1,26 +1,100 @@
 <!doctype html>
 <html>
 <head>
+<style>
+	body {
+		background-color: #53A2C3
+	}
+	ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: dimgrey;
+}
+	
+	#titleHeader {
+		color: chocolate;
+		background-color: black;
+		padding: 35px;
+		text-align: center;
+		
+	}
+
+	.pStyles {
+		background-color: black;
+		padding: 10px;
+		font-size: 24px;
+	}
+	
+li a {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: darkgrey;
+}
+
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+	
+	
+</style>
 <meta charset="UTF-8">
 <title>HTML1</title>
 </head>
 
 <body>
-	<h1><b>This is the Starting Point</b></h1>
+	<h1 id="titleHeader"><b>Courageous by Nature</b></h1>
+	
+	<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="https://www.facebook.com/">Discussion Boards</a></li>
+  <li><a href="index2.html">About Site</a></li>
+</ul>
+	
 	<hr>
 	
 	<h2><em>How do you get better?</em></h2>
-		<p><i>You work from the inside out. You get better with practice, and learning from up to date information.</i></p>
-		<img src="Images/insideoutgoog.jpg" alt="Inside Google" width="640" height="480">
+		<p class="pStyles"><i>You work from the inside out. You get better with practice, and learning from up to date information.</i></p>
+		<img src="Images/insideoutgoog.jpg" alt="Inside Google" width="480" height="340">
 	
 	<h3>Why do you get better?</h3>
-		<p style= "background-color:aliceblue;">You get better so that you learn to run successful, stylish site for yourself or a company.</p>
-		<img src="Images/JPeterson.jpg" width="640" height="480" alt="Jordan Peterson">	
+		<p class="pStyles" ; style="color:red">You get better so that you learn to run successful, stylish site for yourself or a company.</p>
+		<img src="Images/JPeterson.jpg" width="480" height="340" alt="Jordan Peterson">	
+		<img src="Images/jpnormalvscreative.jpg" alt="Normal Vs Creative" width="510" height="340">
 	
-		<p title="I'm a good noodle"><strong>This way I can implement whatever good that can come of me in my website.</strong></p>
-		<img src="Images/imagoodnoodle.jpg" height="480" width="640" alt="Good Noodle Sponge">
+		<p class="pStyles" ; style= "color:red"  title="I'm a good noodle"><strong>This way I can implement whatever good that can come of me in my website.</strong></p>
+		<img src="Images/imagoodnoodle.jpg" height="340" width="480" alt="Good Noodle Sponge">
+
 	
 	
+<table style="width:100%">
+  <tr>
+    <th>Home</th>
+    <th>Discussion Boards</th>
+	<th>About Site</th>  
+  </tr>
+</table>
 	
 </body>
+<script>
+	document.getElementById("titleHeader").innerHTML = "Courargeous by Nature";
+	
+	</script>
 </html>
